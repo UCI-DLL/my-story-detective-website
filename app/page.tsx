@@ -20,6 +20,7 @@ const team = [
   { initials: "MW", name: "Mark Warschauer", title: "Distinguished Professor of Education, UC Irvine", bio: "Former K–12 bilingual teacher and one of the nation’s leading experts in AI in education. Director of the Digital Learning Lab." },
   { initials: "YK", name: "Young-Suk Kim", title: "Professor of Education, UC Irvine", bio: "One of the top U.S. researchers in early reading development. Her work directly informs the platform’s literacy curriculum." },
   { initials: "VM", name: "Viri Murillo", title: "PhD Student in Education, UC Irvine", bio: "Former elementary dual-immersion teacher with deep expertise in language and literacy development for multilingual learners." },
+  { initials: "YX", name: "Ying Xu", title: "Assistant Professor of Education, Harvard University", bio: "A leading expert on the use of AI to promote young children’s learning and a key advisor on the platform’s dialogic reading and decoding supports." },
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
