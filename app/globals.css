@@ -14,9 +14,10 @@ h2{font:500 clamp(44px,5vw,70px)/1 Georgia,"Times New Roman",serif;letter-spacin
 @media(max-width:850px){.hero,.challenge,.approach,.research,.contact{grid-template-columns:1fr}.hero{padding-top:58px}.hero-proof{max-width:600px}.platform-showcase,.platform-showcase.reverse{grid-template-columns:1fr}.platform-showcase.reverse .showcase-copy{order:0}.section-head,.people .section-head{grid-template-columns:1fr}.section-head>p:last-child{grid-column:auto}.people-grid{grid-template-columns:1fr}.showcase-images{grid-template-columns:1fr 1fr}footer{grid-template-columns:1fr 1fr}footer>div{grid-column:1/-1}}
 @media(max-width:560px){.site-header{min-height:78px}.brand small{display:none}.header-cta{font-size:0}.header-cta span{font-size:14px}.hero,.challenge,.approach,.platform,.research,.people,.partnership,.contact{padding:64px 24px}.hero h1{font-size:50px}.hero-proof{padding:24px;box-shadow:8px 8px 0 var(--gold)}.hero-proof>div{grid-template-columns:1fr}.feature-grid,.approach-cards,.benefit-grid,.commitments>div,.showcase-images{grid-template-columns:1fr}.feature-grid article{min-height:250px}.feature-grid h3{margin-top:40px}.platform-showcase{padding:75px 0}.pillars{padding:30px 22px}.contact{align-items:start}footer{grid-template-columns:1fr;padding:44px 24px}footer>div{grid-column:auto}}
 
-.research-lineage{display:block;margin-top:38px;padding:26px 28px;background:white;border-left:7px solid var(--gold);box-shadow:0 12px 30px rgba(6,47,82,.07)}
+.research-lineage-group{display:grid;gap:16px;margin-top:38px}
+.research-lineage{display:block;margin:0;padding:26px 28px;background:white;border-left:7px solid var(--gold);box-shadow:0 12px 30px rgba(6,47,82,.07)}
 .research-lineage span{display:block;color:var(--blue);font-size:10px;letter-spacing:.16em;font-weight:800}
 .research-lineage strong{display:block;margin:9px 0;font:600 25px Georgia,serif;color:var(--navy)}
 .research-lineage small{display:block;font-size:15px;line-height:1.55;color:var(--muted)}
 .research-lineage:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(6,47,82,.11)}
-.research-lineage + .agency-row{margin-top:38px}
+.research-lineage-group + .agency-row{margin-top:38px}
