@@ -21,3 +21,13 @@ h2{font:500 clamp(44px,5vw,70px)/1 Georgia,"Times New Roman",serif;letter-spacin
 .research-lineage small{display:block;font-size:15px;line-height:1.55;color:var(--muted)}
 .research-lineage:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(6,47,82,.11)}
 .research-lineage-group + .agency-row{margin-top:38px}
+.use-cases{padding:110px clamp(24px,7vw,105px);display:grid;grid-template-columns:.72fr 1.28fr;gap:7vw;background:var(--navy);color:white}
+.use-cases-intro>p:last-child{font-size:19px;line-height:1.65;color:#b9d7eb;max-width:620px}
+.use-cases .section-kicker{color:#8cc4e5}
+.use-case-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.use-case-grid article{padding:36px;background:white;border-top:8px solid var(--gold);color:var(--ink)}
+.use-case-grid span{font-size:10px;letter-spacing:.15em;font-weight:800;color:var(--blue)}
+.use-case-grid h3{font:600 29px Georgia,serif;color:var(--navy);line-height:1.15;margin:28px 0 18px}
+.use-case-grid p{line-height:1.7;color:var(--muted);margin:0}
+@media(max-width:1000px){.use-cases{grid-template-columns:1fr}.use-cases-intro{max-width:760px}}
+@media(max-width:650px){.use-cases{padding:64px 24px}.use-case-grid{grid-template-columns:1fr}.use-case-grid article{padding:28px}}
