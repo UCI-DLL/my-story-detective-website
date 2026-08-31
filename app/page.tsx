@@ -7,15 +7,6 @@ const platformFeatures = [
   ["04", "Teacher Progress Dashboard", "Teachers access real-time engagement and progress data for every student, enabling smarter instructional decisions."],
 ];
 
-const benefits = [
-  ["Free Platform Access", "No cost to the district at any stage of the partnership."],
-  ["Shape the Platform", "Teachers’ feedback directly drives platform development."],
-  ["$1,000 Teacher Stipends", "Each participating teacher receives a $1,000 stipend for their time."],
-  ["Professional Learning", "Brief monthly sessions align with existing literacy instruction."],
-  ["Student Progress Data", "A real-time dashboard shows engagement and learning outcomes."],
-  ["Priority Expansion Access", "Partner districts receive first access as the platform scales."],
-];
-
 const team = [
   { initials: "MW", name: "Mark Warschauer", title: "Distinguished Professor of Education, UC Irvine", bio: "Former K–12 bilingual teacher and one of the nation’s leading experts in AI in education. Director of the Digital Learning Lab." },
   { initials: "YK", name: "Young-Suk Kim", title: "Professor of Education, UC Irvine", bio: "One of the top U.S. researchers in early reading development. Her work directly informs the platform’s literacy curriculum." },
@@ -45,8 +36,6 @@ export default function Home() {
     <section className="research" id="research"><div className="research-copy"><p className="section-kicker">RESEARCH FOUNDATION</p><h2>Built on a decade of UCI research.</h2><p>My Story Detective was developed with support from two of the nation’s leading federal research agencies and is grounded in the science of reading.</p><div className="research-lineage-group"><article className="research-lineage"><span>PROVEN INTERVENTION</span><strong>From Story Detective to My Story Detective</strong><small>My Story Detective transforms Professor Young-Suk Kim’s Story Detective—a teacher-led dialogic reading intervention shown to improve students’ oral language skills and vocabulary—into a personalized, AI-driven reading coach that children can use at school or at home.</small></article><a className="research-lineage" href="https://www.conversetolearn.org/" target="_blank" rel="noreferrer"><span>RESEARCH LINEAGE</span><strong>Building on Converse to Learn</strong><small>My Story Detective extends the UCI Digital Learning Lab’s research on AI-enabled dialogic reading—combining conversational agents with books and videos to support young children’s learning. ↗</small></a></div><div className="agency-row"><span>U.S. Department of Education</span><span>National Science Foundation</span></div></div><div className="pillars"><p>SCIENCE OF READING</p><h3>Two pillars drive every feature.</h3><article><span>01</span><div><h4>Oral Language</h4><p>Vocabulary, listening comprehension, and expressive language—the foundation of reading success.</p></div></article><article><span>02</span><div><h4>Decoding</h4><p>Phonics, phonological awareness, and word reading—translating print into meaning.</p></div></article></div></section>
 
     <section className="people" id="people"><div className="section-head"><p className="section-kicker">THE TEAM</p><h2>Research team behind the platform.</h2><p>Deep expertise in AI, early reading development, multilingual learning, and classroom practice.</p></div><div className="people-grid">{team.map(person => <article key={person.name}><div className="portrait" aria-hidden="true">{person.initials}</div><h3>{person.name}</h3><h4>{person.title}</h4><p>{person.bio}</p></article>)}</div></section>
-
-    <section className="partnership"><div className="partnership-intro"><p className="section-kicker">PARTNERSHIP BENEFITS</p><h2>What your school gets.</h2><p>Teacher participation is voluntary, and the UCI team provides full support at every step.</p></div><div className="benefit-grid">{benefits.map(([title,text],i) => <article key={title}><span>{String(i+1).padStart(2,"0")}</span><h3>{title}</h3><p>{text}</p></article>)}</div><div className="commitments"><h3>Simple commitments. Meaningful impact.</h3><div><p><b>Identify K–2 teachers</b><br />Approximately six volunteers per school.</p><p><b>Use existing literacy time</b><br />Fits into center time or intervention blocks.</p><p><b>Introduce families</b><br />Bilingual books are available for home use.</p><p><b>Provide feedback</b><br />Quarterly interviews, surveys, and classroom visits.</p></div></div></section>
 
     <section className="contact" id="contact-us"><div><p className="section-kicker">CONTACT US</p><h2>Bring individualized literacy support to your school.</h2></div><div><p>Interested in becoming a research and development partner? Let’s talk about how My Story Detective can fit your teachers, students, and existing literacy schedule.</p><a className="contact-button" href="mailto:markw@uci.edu">Start a conversation <Arrow /></a></div></section>
 
