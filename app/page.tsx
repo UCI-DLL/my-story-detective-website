@@ -8,11 +8,11 @@ const platformFeatures = [
 ];
 
 const team = [
-  { initials: "MW", name: "Mark Warschauer", title: "Distinguished Professor of Education, UC Irvine", bio: "Former K–12 bilingual teacher and one of the nation’s leading experts in AI in education. Director of the Digital Learning Lab." },
-  { initials: "YK", name: "Young-Suk Kim", title: "Professor of Education, UC Irvine", bio: "One of the top U.S. researchers in early reading development. Her work directly informs the platform’s literacy curriculum." },
-  { initials: "YX", name: "Ying Xu", title: "Assistant Professor of Education, Harvard University", bio: "A leading expert on the use of AI to promote young children’s learning and a key advisor on the platform’s dialogic reading and decoding supports." },
-  { initials: "VM", name: "Viri Murillo", title: "PhD Student in Education, UC Irvine", bio: "Former elementary dual-immersion teacher with deep expertise in language and literacy development for multilingual learners." },
-  { initials: "JL", name: "Julian Levine", title: "PhD Candidate in Education, UC Irvine", bio: "A language and literacy researcher investigating how AI-powered conversational agents and interactive media can support children’s learning and vocabulary development." },
+  { initials: "MW", image: "/team/Mark-Warschauer-headshot2-full.jpg", name: "Mark Warschauer", title: "Distinguished Professor of Education, UC Irvine", bio: "Former K–12 bilingual teacher and one of the nation’s leading experts in AI in education. Director of the Digital Learning Lab." },
+  { initials: "YK", image: "/team/young-suk-kim.jpg", name: "Young-Suk Kim", title: "Professor of Education, UC Irvine", bio: "One of the top U.S. researchers in early reading development. Her work directly informs the platform’s literacy curriculum." },
+  { initials: "YX", image: "/team/ying-xu.jpg", name: "Ying Xu", title: "Assistant Professor of Education, Harvard University", bio: "A leading expert on the use of AI to promote young children’s learning and a key advisor on the platform’s dialogic reading and decoding supports." },
+  { initials: "VM", image: "/team/viri-murillo-linkedin.jpeg", name: "Viri Murillo", title: "PhD Student in Education, UC Irvine", bio: "Former elementary dual-immersion teacher with deep expertise in language and literacy development for multilingual learners." },
+  { initials: "JL", image: "/team/julian-levine.jpg", name: "Julian Levine", title: "PhD Candidate in Education, UC Irvine", bio: "A language and literacy researcher investigating how AI-powered conversational agents and interactive media can support children’s learning and vocabulary development." },
 ];
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
@@ -31,12 +31,42 @@ export default function Home() {
     <section className="platform" id="platform"><div className="section-head"><p className="section-kicker">THE PLATFORM</p><h2>Meet My Story Detective.</h2><p>An AI literacy coach that works like a skilled tutor—interactively, patiently, and at scale.</p></div><div className="feature-grid">{platformFeatures.map(([n,title,text]) => <article key={n}><span>{n}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
       <div className="platform-showcase"><div className="showcase-copy"><p className="section-kicker">COMPREHENSION</p><h2>Stories become conversations.</h2><p>Students use text structure and comprehension strategies while a conversational agent checks understanding, supports inferencing, and builds language.</p><ul><li>Comprehension monitoring</li><li>Inferencing and perspective-taking</li><li>Vocabulary and language building</li></ul></div><div className="showcase-images"><img src="/platform/story-preview.png" alt="Illustrated storybook interface used for interactive co-reading" /><img src="/platform/dialogue-preview.jpg" alt="Examples of AI-supported comprehension monitoring, inferencing, and language building" /></div></div>
       <div className="platform-showcase reverse"><div className="showcase-copy"><p className="section-kicker">DECODING</p><h2>Practice from sounds to connected text.</h2><p>Students read individual words, answer sentence-level prompts, and build fluency with decodable texts. AI feedback identifies substitutions, deletions, insertions, and disfluency at the word and sound level.</p></div><div className="showcase-images wide"><img src="/platform/decoding-practice.png" alt="Word, sentence, and decodable reading activities" /><img src="/platform/ai-feedback.png" alt="AI feedback for word-level and sound-level decoding" /></div></div>
-      <aside className="story-library"><p><b>Story library</b> · The platform brings together evidence-based Story Detective and COMPASS titles with <strong>The Science Adventures of Luna and Leo</strong>, a bilingual, community-informed science ebook collection.</p></aside>
+      <aside className="story-library"><p><b>Story library</b> · The platform brings together evidence-based Story Detective and COMPASS titles with <strong>The Science Adventures of Luna and Leo</strong>, a bilingual, community-informed science ebook collection.</p></aside><a className="platform-detail-link" href="/platform">Learn more about My Story Detective <Arrow /></a>
     </section>
 
-    <section className="research" id="research"><div className="research-copy"><p className="section-kicker">RESEARCH FOUNDATION</p><h2>Built on a decade of UCI research.</h2><p>My Story Detective was developed with support from two of the nation’s leading federal research agencies and is grounded in the science of reading.</p><div className="research-lineage-group"><article className="research-lineage"><span>PROVEN INTERVENTION</span><strong>From Story Detective to My Story Detective</strong><small>My Story Detective transforms Professor Young-Suk Kim’s Story Detective—a teacher-led dialogic reading intervention shown to improve students’ oral language skills and vocabulary—into a personalized, AI-driven reading coach that children can use at school or at home.</small></article><a className="research-lineage" href="https://www.conversetolearn.org/" target="_blank" rel="noreferrer"><span>RESEARCH LINEAGE</span><strong>Building on Converse to Learn</strong><small>My Story Detective extends the UCI Digital Learning Lab’s research on AI-enabled dialogic reading—combining conversational agents with books and videos to support young children’s learning. ↗</small></a></div><div className="agency-row"><span>U.S. Department of Education</span><span>National Science Foundation</span></div><a className="grant-proposal-link" href="https://drive.google.com/file/d/1ctN0dnZ_LHgHw8Fqo_cQmauMs7ADeHUx/view" target="_blank" rel="noreferrer">View grant proposal <Arrow /></a></div><div className="pillars"><p>SCIENCE OF READING</p><h3>Two pillars drive every feature.</h3><article><span>01</span><div><h4>Oral Language</h4><p>Vocabulary, listening comprehension, and expressive language—the foundation of reading success.</p></div></article><article><span>02</span><div><h4>Decoding</h4><p>Phonics, phonological awareness, and word reading—translating print into meaning.</p></div></article></div></section>
+    <section className="research" id="research">
+      <div className="research-copy">
+        <p className="section-kicker">RESEARCH FOUNDATION</p>
+        <h2>Built on a decade of UCI research.</h2>
+        <p>My Story Detective was developed with support from two of the nation’s leading federal research agencies and is grounded in the science of reading.</p>
+        <div className="research-lineage-group">
+          <article className="research-lineage">
+            <span>PROVEN INTERVENTION</span>
+            <strong>From Story Detective to My Story Detective</strong>
+            <small>My Story Detective transforms Professor Young-Suk Kim’s Story Detective—a teacher-led dialogic reading intervention shown to improve students’ oral language skills and vocabulary—into a personalized, AI-driven reading coach that children can use at school or at home.</small>
+          </article>
+          <a className="research-lineage" href="https://www.conversetolearn.org/" target="_blank" rel="noreferrer">
+            <span>RESEARCH LINEAGE</span>
+            <strong>Building on Converse to Learn</strong>
+            <small>My Story Detective extends the UCI Digital Learning Lab’s research on AI-enabled dialogic reading—combining conversational agents with books and videos to support young children’s learning. ↗</small>
+          </a>
+        </div>
+        <a className="research-detail-link" href="/research">Explore our research <Arrow /></a>
+      </div>
+      <div className="pillars">
+        <p>INSTRUCTIONAL FRAMEWORK</p>
+        <h3>Science of Reading: Two pillars drive every feature.</h3>
+        <article><span>01</span><div><h4>Oral Language</h4><p>Vocabulary, listening comprehension, and expressive language—the foundation of reading success.</p></div></article>
+        <article><span>02</span><div><h4>Decoding</h4><p>Phonics, phonological awareness, and word reading—translating print into meaning.</p></div></article>
+      </div>
+      <div className="research-support">
+        <p>PROJECT SUPPORT</p>
+        <div className="agency-row"><span>U.S. Department of Education</span><span>National Science Foundation</span></div>
+        <a className="grant-proposal-link" href="https://drive.google.com/file/d/1ctN0dnZ_LHgHw8Fqo_cQmauMs7ADeHUx/view" target="_blank" rel="noreferrer">View Grant Proposal <Arrow /></a>
+      </div>
+    </section>
 
-    <section className="people" id="people"><div className="section-head"><p className="section-kicker">THE TEAM</p><h2>Research team behind the platform.</h2><p>Deep expertise in AI, early reading development, multilingual learning, and classroom practice.</p></div><div className="people-grid">{team.map(person => <article key={person.name}><div className="portrait" aria-hidden="true">{person.initials}</div><h3>{person.name}</h3><h4>{person.title}</h4><p>{person.bio}</p></article>)}</div></section>
+    <section className="people" id="people"><div className="section-head"><p className="section-kicker">THE TEAM</p><h2>Research team behind the platform.</h2><p>Deep expertise in AI, early reading development, multilingual learning, and classroom practice.</p></div><div className="people-grid">{team.map(person => <article key={person.name}><div className="portrait" aria-hidden="true">{person.image ? <img src={person.image} alt="" /> : person.initials}</div><h3>{person.name}</h3><h4>{person.title}</h4><p>{person.bio}</p></article>)}</div></section>
 
     <section className="use-cases"><div className="use-cases-intro"><p className="section-kicker">WHERE LEARNING HAPPENS</p><h2>Designed for school. Accessible at home.</h2><p>My Story Detective extends individualized literacy support beyond a single setting, helping children stay engaged wherever they read.</p></div><div className="use-case-grid"><article><span>01 · FOR SCHOOL</span><h3>Personalized learning that fits the classroom.</h3><p>Designed for individual learning during center rotations and other independent-work periods. Dialogic questions keep students actively engaged, check understanding, and deepen learning as each child reads.</p></article><article><span>02 · FOR HOME</span><h3>Reading support on any connected device.</h3><p>Stories are accessible from any internet-connected phone, tablet, or computer. Family discussion questions at the end of each story bring parents and caregivers into the learning process.</p></article></div></section>
 
