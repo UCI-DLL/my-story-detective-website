@@ -29,7 +29,7 @@ export default function PlatformPage() {
 
     <section className="platform-intro">
       <p className="section-kicker">WHAT IT IS</p>
-      <div><h2>An AI-supported literacy coach that keeps children thinking, talking, and reading.</h2><p>My Story Detective extends teacher-led dialogic reading with a conversational agent that can prompt children to explain their thinking, build vocabulary, and revisit ideas in a story. It also integrates word-reading practice so children can work on foundational decoding skills in connection with what they read.</p></div>
+      <div><h2>An AI-supported literacy coach that keeps children thinking, talking, and reading.</h2><p>My Story Detective extends teacher-led dialogic reading with a conversational agent that can prompt children to explain their thinking, build vocabulary, and revisit ideas in a story. It also integrates word-reading practice so children can work on foundational decoding skills in connection with what they read.</p><p className="platform-library-note"><b>Story library</b> · The platform brings together evidence-based Story Detective and COMPASS titles with <strong>The Science Adventures of Luna and Leo</strong>, a bilingual, community-informed science ebook collection.</p></div>
     </section>
 
     <section className="platform-flow" aria-labelledby="experience-heading">
@@ -38,7 +38,7 @@ export default function PlatformPage() {
     </section>
 
     <section className="platform-learning">
-      <div className="platform-learning-copy"><p className="section-kicker">MAJOR COMPONENTS</p><h2>One story experience, multiple paths to learning.</h2><p>My Story Detective brings together the core skills children need for successful reading rather than treating them as separate tasks.</p><a className="platform-home-link" href="/#research">Explore the research foundation <Arrow /></a></div>
+      <div className="platform-learning-copy"><p className="section-kicker">MAJOR COMPONENTS</p><h2>One story experience, multiple paths to learning.</h2><p>My Story Detective brings together the core skills children need for successful reading rather than treating them as separate tasks.</p><div className="platform-learning-framework"><span>INSTRUCTIONAL FRAMEWORK</span><p><b>Oral language</b> supports vocabulary, listening comprehension, and expressive language. <b>Decoding</b> supports phonics, phonological awareness, and word reading.</p></div><a className="primary-cta" href="/research">Explore the research <Arrow /></a></div>
       <div className="platform-learning-grid">{learningAreas.map(([number, title, text]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
     </section>
 

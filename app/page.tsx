@@ -1,12 +1,5 @@
 const nav = ["About", "Platform", "Research", "People", "Contact Us"];
 
-const platformFeatures = [
-  ["01", "Interactive Co-Reading", "Students read illustrated storybooks alongside the AI tutor, building comprehension through guided dialogue and real-time prompts."],
-  ["02", "Oral Language & Vocabulary", "Structured conversations build vocabulary and oral language skills—the foundation of strong reading comprehension."],
-  ["03", "Word Decoding Practice", "Targeted phonics and decoding activities provide repeated practice with immediate, personalized AI feedback."],
-  ["04", "Teacher Progress Dashboard", "Teachers access real-time engagement and progress data for every student, enabling smarter instructional decisions."],
-];
-
 const team = [
   { initials: "MW", image: "/team/Mark-Warschauer-headshot2-full.jpg", name: "Mark Warschauer", title: "Distinguished Professor of Education, UC Irvine", bio: "Former K–12 bilingual teacher and one of the nation’s leading experts in AI in education. Director of the Digital Learning Lab." },
   { initials: "YK", image: "/team/young-suk-kim.jpg", name: "Young-Suk Kim", title: "Professor of Education, UC Irvine", bio: "One of the top U.S. researchers in early reading development. Her work directly informs the platform’s literacy curriculum." },
@@ -28,41 +21,21 @@ export default function Home() {
 
     <section className="approach"><div className="approach-title"><p className="section-kicker">PEDAGOGICAL APPROACH</p><h2>Learning through dialogue.</h2><p>Our AI–human dialogue simulates teacher-led dialogic reading, encouraging active verbalization, inference, and reflection.</p></div><div className="approach-cards"><article><span>ASK</span><h3>Socratic Tutoring</h3><p>Instead of providing answers, the AI asks open-ended questions that prompt students to explain their thinking and build metacognitive awareness.</p></article><article><span>ADAPT</span><h3>Adaptive Cues</h3><p>Scaffolding adjusts dynamically to each student’s verbal responses, providing just-in-time support during natural conversation.</p></article></div></section>
 
-    <section className="platform" id="platform"><div className="section-head"><p className="section-kicker">THE PLATFORM</p><h2>Meet My Story Detective.</h2><p>An AI literacy coach that works like a skilled tutor—interactively, patiently, and at scale.</p></div><div className="feature-grid">{platformFeatures.map(([n,title,text]) => <article key={n}><span>{n}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
-      <div className="platform-showcase"><div className="showcase-copy"><p className="section-kicker">COMPREHENSION</p><h2>Stories become conversations.</h2><p>Students use text structure and comprehension strategies while a conversational agent checks understanding, supports inferencing, and builds language.</p><ul><li>Comprehension monitoring</li><li>Inferencing and perspective-taking</li><li>Vocabulary and language building</li></ul></div><div className="showcase-images"><img src="/platform/story-preview.png" alt="Illustrated storybook interface used for interactive co-reading" /><img src="/platform/dialogue-preview.jpg" alt="Examples of AI-supported comprehension monitoring, inferencing, and language building" /></div></div>
-      <div className="platform-showcase reverse"><div className="showcase-copy"><p className="section-kicker">DECODING</p><h2>Practice from sounds to connected text.</h2><p>Students read individual words, answer sentence-level prompts, and build fluency with decodable texts. AI feedback identifies substitutions, deletions, insertions, and disfluency at the word and sound level.</p></div><div className="showcase-images wide"><img src="/platform/decoding-practice.png" alt="Word, sentence, and decodable reading activities" /><img src="/platform/ai-feedback.png" alt="AI feedback for word-level and sound-level decoding" /></div></div>
-      <aside className="story-library"><p><b>Story library</b> · The platform brings together evidence-based Story Detective and COMPASS titles with <strong>The Science Adventures of Luna and Leo</strong>, a bilingual, community-informed science ebook collection.</p></aside><a className="platform-detail-link" href="/platform">Learn more about My Story Detective <Arrow /></a>
+    <section className="platform" id="platform"><div className="section-head"><p className="section-kicker">THE PLATFORM</p><h2>Meet My Story Detective.</h2><p>An AI literacy coach that works like a skilled tutor—interactively, patiently, and at scale.</p></div>
+      <div className="platform-home-overview"><div><p>My Story Detective brings illustrated stories, guided conversation, and word-reading practice into one connected experience. Children build meaning as they talk about stories and practice the skills that help them read independently.</p><a className="primary-cta" href="/platform">Explore the platform <Arrow /></a></div><img src="/platform/story-preview.png" alt="Illustrated storybook interface used for interactive co-reading" /></div>
     </section>
 
     <section className="research" id="research">
       <div className="research-copy">
         <p className="section-kicker">RESEARCH FOUNDATION</p>
         <h2>Built on a decade of UCI research.</h2>
-        <p>My Story Detective was developed with support from two of the nation’s leading federal research agencies and is grounded in the science of reading.</p>
-        <div className="research-lineage-group">
-          <article className="research-lineage">
-            <span>PROVEN INTERVENTION</span>
-            <strong>From Story Detective to My Story Detective</strong>
-            <small>My Story Detective transforms Professor Young-Suk Kim’s Story Detective—a teacher-led dialogic reading intervention shown to improve students’ oral language skills and vocabulary—into a personalized, AI-driven reading coach that children can use at school or at home.</small>
-          </article>
-          <a className="research-lineage" href="https://www.conversetolearn.org/" target="_blank" rel="noreferrer">
-            <span>RESEARCH LINEAGE</span>
-            <strong>Building on Converse to Learn</strong>
-            <small>My Story Detective extends the UCI Digital Learning Lab’s research on AI-enabled dialogic reading—combining conversational agents with books and videos to support young children’s learning. ↗</small>
-          </a>
-        </div>
-        <a className="research-detail-link" href="/research">Explore our research <Arrow /></a>
-      </div>
-      <div className="pillars">
-        <p>INSTRUCTIONAL FRAMEWORK</p>
-        <h3>Science of Reading: Two pillars drive every feature.</h3>
-        <article><span>01</span><div><h4>Oral Language</h4><p>Vocabulary, listening comprehension, and expressive language—the foundation of reading success.</p></div></article>
-        <article><span>02</span><div><h4>Decoding</h4><p>Phonics, phonological awareness, and word reading—translating print into meaning.</p></div></article>
+        <p>My Story Detective builds on two UCI research foundations: early-literacy research led by Professor Young-Suk Kim and the UCI Digital Learning Lab’s Converse to Learn project, which explores AI-supported dialogic learning.</p>
+        <div className="research-home-foundations"><article><span>EARLY LITERACY RESEARCH</span><h3>Language, comprehension, and word reading</h3><p>Professor Young-Suk Kim’s research and the Story Detective and COMPASS interventions inform the project’s focus on the connected skills children use as they become readers.</p></article><article><span>CONVERSE TO LEARN</span><h3>Dialogic reading with conversational agents</h3><p>The UCI Digital Learning Lab’s Converse to Learn project explores how conversational agents can support children’s engagement, comprehension, and vocabulary during story-based learning.</p></article></div>
+        <div className="cta-group"><a className="primary-cta" href="/research">Explore the research <Arrow /></a><a className="secondary-cta" href="https://drive.google.com/file/d/1ctN0dnZ_LHgHw8Fqo_cQmauMs7ADeHUx/view" target="_blank" rel="noreferrer">View Grant Proposal <Arrow /></a></div>
       </div>
       <div className="research-support">
-        <p>PROJECT SUPPORT</p>
-        <div className="agency-row"><span>U.S. Department of Education</span><span>National Science Foundation</span></div>
-        <a className="grant-proposal-link" href="https://drive.google.com/file/d/1ctN0dnZ_LHgHw8Fqo_cQmauMs7ADeHUx/view" target="_blank" rel="noreferrer">View Grant Proposal <Arrow /></a>
+        <p>PROJECT FUNDING &amp; RELATED SUPPORT</p>
+        <div className="agency-row"><span><b>U.S. Department of Education</b><small>Supports My Story Detective</small></span><span><b>National Science Foundation</b><small>Supports related storybook development</small></span></div>
       </div>
     </section>
 
