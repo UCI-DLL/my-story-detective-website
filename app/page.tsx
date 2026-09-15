@@ -11,7 +11,7 @@ const team = [
   { initials: "MW", image: "/team/Mark-Warschauer-headshot2-full.jpg", name: "Mark Warschauer", title: "Distinguished Professor of Education, UC Irvine", bio: "Former K–12 bilingual teacher and one of the nation’s leading experts in AI in education. Director of the Digital Learning Lab." },
   { initials: "YK", image: "/team/young-suk-kim.jpg", name: "Young-Suk Kim", title: "Professor of Education, UC Irvine", bio: "One of the top U.S. researchers in early reading development. Her work directly informs the platform’s literacy curriculum." },
   { initials: "YX", image: "/team/ying-xu.jpg", name: "Ying Xu", title: "Assistant Professor of Education, Harvard University", bio: "A leading expert on the use of AI to promote young children’s learning and a key advisor on the platform’s dialogic reading and decoding supports." },
-  { initials: "VM", image: "/team/viri-murillo-linkedin.jpeg", name: "Viri Murillo", title: "PhD Student in Education, UC Irvine", bio: "Former elementary dual-immersion teacher with deep expertise in language and literacy development for multilingual learners." },
+  { initials: "VM", image: "/team/viri-murillo.jpeg", name: "Viri Murillo", title: "PhD Student in Education, UC Irvine", bio: "Former elementary dual-immersion teacher with deep expertise in language and literacy development for multilingual learners." },
   { initials: "JL", image: "/team/julian-levine.jpg", name: "Julian Levine", title: "PhD Candidate in Education, UC Irvine", bio: "A language and literacy researcher investigating how AI-powered conversational agents and interactive media can support children’s learning and vocabulary development." },
 ];
 

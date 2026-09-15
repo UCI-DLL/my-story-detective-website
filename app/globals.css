@@ -65,3 +65,4 @@ h2{font:500 clamp(44px,5vw,70px)/1 Georgia,"Times New Roman",serif;letter-spacin
 .research-plan-heading>h2 + p:last-child,.research-section-heading>h2 + p:not(.section-kicker),.research-lineage-detail>div>h2 + p:not(.section-kicker),.research-references>div>h2 + p:last-child{margin-top:1em}
 .converse-project-link{display:inline-flex;align-items:center;gap:12px;margin-top:28px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:3px solid var(--gold);padding-bottom:7px}.converse-project-link:hover{color:var(--navy)}
 .reference-list .converse-project-link{text-decoration:none}
+.portrait img[src="/team/viri-murillo.jpeg"]{object-position:center 5%}
