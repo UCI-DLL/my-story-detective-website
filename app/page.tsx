@@ -13,7 +13,7 @@ function Brand() { return <a className="brand" href="#top" aria-label="My Story 
 
 export default function Home() {
   return <main>
-    <header className="site-header"><Brand /><nav aria-label="Main navigation">{nav.map(item => <a key={item} href={`#${item.toLowerCase().replaceAll(" ", "-")}`}>{item}</a>)}</nav><a className="header-cta" href="#contact-us">Partner with us <Arrow /></a></header>
+    <header className="site-header"><Brand /><nav aria-label="Main navigation">{nav.map(item => <a key={item} href={item === "Platform" ? "/platform" : item === "Research" ? "/research" : `#${item.toLowerCase().replaceAll(" ", "-")}`}>{item}</a>)}</nav><a className="header-cta" href="#contact-us">Partner with us <Arrow /></a></header>
 
     <section className="hero" id="top"><div className="hero-copy"><p className="eyebrow">UC IRVINE · DIGITAL LEARNING LAB</p><h1>An AI-supported<br />literacy coach for<br />struggling readers.</h1><p className="hero-lede">Personalized support for every K–2 student, grounded in the science of reading—interactive, patient, and built to work at scale.</p><a className="text-link" href="#platform">Meet My Story Detective <Arrow /></a></div><div className="hero-proof" aria-label="The challenge My Story Detective addresses"><p className="proof-label">THE READING GAP</p><div><strong>~40%</strong><span>of K–2 students struggle with foundational reading skills</span></div><div><strong>1-on-1</strong><span>tutoring works best—but districts cannot deliver it at scale</span></div><p className="proof-note">My Story Detective brings individualized support into existing literacy time.</p></div></section>
 
