@@ -38,7 +38,7 @@ export default function PlatformPage() {
     </section>
 
     <section className="platform-learning">
-      <div className="platform-learning-copy"><p className="section-kicker">MAJOR COMPONENTS</p><h2>One story experience, multiple paths to learning.</h2><p>My Story Detective brings together the core skills children need for successful reading rather than treating them as separate tasks.</p><div className="platform-learning-framework"><span>INSTRUCTIONAL FRAMEWORK</span><p><b>Oral language</b> supports vocabulary, listening comprehension, and expressive language. <b>Decoding</b> supports phonics, phonological awareness, and word reading.</p></div><a className="primary-cta" href="/research">Explore the research <Arrow /></a></div>
+      <div className="platform-learning-copy"><p className="section-kicker">MAJOR COMPONENTS</p><h2>One story experience, multiple paths to learning.</h2><p>My Story Detective brings together the core skills children need for successful reading rather than treating them as separate tasks.</p><div className="platform-learning-framework"><span>INSTRUCTIONAL FRAMEWORK</span><p><b>Oral language</b> supports vocabulary, listening comprehension, and expressive language. <b>Decoding</b> supports phonics, phonological awareness, and word reading.</p></div></div>
       <div className="platform-learning-grid">{learningAreas.map(([number, title, text]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
     </section>
 
