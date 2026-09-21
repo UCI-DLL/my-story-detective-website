@@ -1,7 +1,4 @@
-import Link from "next/link";
-
 const navigation = [
-  ["Home", "/"],
   ["About", "/about"],
   ["Platform", "/platform"],
   ["Research", "/research"],
@@ -22,7 +19,7 @@ export function Arrow() {
 }
 
 export function Brand() {
-  return <Link className="brand" href="/" aria-label="My Story Detective home"><span className="brand-rule" /><span><b>MY STORY DETECTIVE</b><small>UC Irvine · Digital Learning Lab</small></span></Link>;
+  return <a className="brand" href="/" aria-label="My Story Detective home"><span className="brand-rule" /><span><b>MY STORY DETECTIVE</b><small>UC Irvine · Digital Learning Lab</small></span></a>;
 }
 
 export function SiteHeader() {
