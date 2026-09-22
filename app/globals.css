@@ -108,3 +108,6 @@ h2{font:500 clamp(44px,5vw,70px)/1 Georgia,"Times New Roman",serif;letter-spacin
 .team-portrait:nth-child(3){z-index:3}.team-portrait:nth-child(4){z-index:4}.team-portrait:nth-child(5){z-index:5}
 .about-hero .eyebrow,.platform-hero-detail .eyebrow,.people-hero .eyebrow,.contact-hero .eyebrow{color:#8cc4e5}
 .research-copy>.cta-group{margin-top:56px}
+footer .funding-ack p{margin:8px 0 0}
+footer>small{margin-top:16px}
+footer{column-gap:4vw;row-gap:0}
