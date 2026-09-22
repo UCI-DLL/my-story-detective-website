@@ -112,5 +112,9 @@ footer .funding-ack p{margin:8px 0 0}
 footer>small{margin-top:16px}
 footer{column-gap:4vw;row-gap:0}
 .people-directory-grid>article>.person-occupation{margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.5}
+.team-portrait img[src="/team/tamara-tate.jpg"],.people-directory .portrait img[src="/team/tamara-tate.jpg"]{object-position:center 35%}
+.team-portrait:nth-child(6){z-index:6}
+.team-portrait.tamara-portrait{display:grid;place-items:center}
+.team-portrait.tamara-portrait img{height:auto!important;transform:none!important}
 .about-approach{background:white}
 .about-research>div>.section-kicker{margin:0 0 24px;color:var(--blue);font-size:11px;line-height:1.4;font-weight:800;letter-spacing:.18em}
