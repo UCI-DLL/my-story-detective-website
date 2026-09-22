@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Arrow, SiteFooter, SiteHeader } from "../../components/SiteChrome";
 
 export const metadata: Metadata = {
   title: "Research | My Story Detective",
@@ -11,14 +12,9 @@ const plannedResearch = [
   ["03", "Learn from use", "The project will study platform use, implementation, and children’s language and literacy development to guide ongoing improvement."],
 ];
 
-function Arrow() { return <span aria-hidden="true">↗</span>; }
-
 export default function ResearchPage() {
   return <main className="research-page">
-    <header className="research-page-header">
-      <a className="platform-brand" href="/"><span aria-hidden="true"></span><div><b>MY STORY DETECTIVE</b><small>UC Irvine · Digital Learning Lab</small></div></a>
-      <a className="platform-back" href="/#research">Back to home <Arrow /></a>
-    </header>
+    <SiteHeader />
 
     <section className="research-hero-detail">
       <p className="eyebrow">THE RESEARCH</p>
@@ -57,6 +53,7 @@ export default function ResearchPage() {
       </div></div></div>
     </section>
 
-    <section className="research-detail-cta"><p className="section-kicker">MY STORY DETECTIVE</p><h2>Research-guided literacy support for young readers.</h2><a className="contact-button" href="/#contact-us">Talk with our team <Arrow /></a></section>
+    <section className="research-detail-cta"><p className="section-kicker">MY STORY DETECTIVE</p><h2>Research-guided literacy support for young readers.</h2><a className="contact-button" href="/contact">Talk with our team <Arrow /></a></section>
+    <SiteFooter />
   </main>;
 }
