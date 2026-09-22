@@ -1,3 +1,5 @@
+import { Arrow, SiteFooter, SiteHeader } from "../../components/SiteChrome";
+
 const learningAreas = [
   ["01", "Comprehension through conversation", "During interactive reading, the AI poses questions about explicit information in the story as well as questions that invite inference, perspective-taking, and personal connections."],
   ["02", "Vocabulary in context", "Guided discussion brings attention to useful words within the story itself, helping children explore language as part of meaning-making."],
@@ -12,14 +14,9 @@ const experienceSteps = [
   ["Build on each response", "The experience is designed to use a child’s answers to offer relevant feedback, follow-up questions, and additional practice."],
 ];
 
-function Arrow() { return <span aria-hidden="true">↗</span>; }
-
 export default function PlatformPage() {
   return <main className="platform-page">
-    <header className="platform-page-header">
-      <a className="platform-brand" href="/"><span aria-hidden="true"></span><div><b>MY STORY DETECTIVE</b><small>UC Irvine · Digital Learning Lab</small></div></a>
-      <a className="platform-back" href="/#platform">Back to home <Arrow /></a>
-    </header>
+    <SiteHeader />
 
     <section className="platform-hero-detail">
       <p className="eyebrow">THE PLATFORM</p>
@@ -57,6 +54,7 @@ export default function PlatformPage() {
       <div className="platform-context-cards"><article><span>IN CLASSROOMS</span><h3>Support during literacy time</h3><p>The platform is designed for use in established classroom routines, including independent center time, while teachers remain central to instruction.</p></article><article><span>AT HOME</span><h3>Prompts for shared reading</h3><p>A family-facing experience is planned to help caregivers and children discuss story-related ideas together during at-home reading.</p></article><article><span>AS IT DEVELOPS</span><h3>Informed by use and feedback</h3><p>Planned progress information and learning data are intended to help educators monitor use and to guide ongoing refinement with teachers, families, and students.</p></article></div>
     </section>
 
-    <section className="platform-detail-cta"><p className="section-kicker">MY STORY DETECTIVE</p><h2>Individualized literacy support, grounded in the science of reading.</h2><a className="contact-button" href="/#contact-us">Talk with our team <Arrow /></a></section>
+    <section className="platform-detail-cta"><p className="section-kicker">MY STORY DETECTIVE</p><h2>Individualized literacy support, grounded in the science of reading.</h2><a className="contact-button" href="/contact">Talk with our team <Arrow /></a></section>
+    <SiteFooter />
   </main>;
 }
