@@ -3,7 +3,7 @@ const navigation = [
   ["Platform", "/platform"],
   ["Research", "/research"],
   ["People", "/people"],
-  ["Contact Us", "/contact"],
+  ["Contact", "/contact"],
 ] as const;
 
 const footerNavigation = [
