@@ -107,3 +107,4 @@ h2{font:500 clamp(44px,5vw,70px)/1 Georgia,"Times New Roman",serif;letter-spacin
 .team-portrait img[src="/team/mark-warschauer-portrait.jpg"],.people-directory .portrait img[src="/team/mark-warschauer-portrait.jpg"]{transform:translate(4%,10%) scale(1.2)!important}.team-portrait img[src="/team/julian-levine-portrait.jpg"],.people-directory .portrait img[src="/team/julian-levine-portrait.jpg"]{transform:translate(10%,-2%) scale(1.23)!important}.team-portrait:first-child{z-index:1}.team-portrait:nth-child(2){z-index:2}
 .team-portrait:nth-child(3){z-index:3}.team-portrait:nth-child(4){z-index:4}.team-portrait:nth-child(5){z-index:5}
 .about-hero .eyebrow,.platform-hero-detail .eyebrow,.people-hero .eyebrow,.contact-hero .eyebrow{color:#8cc4e5}
+.research-copy>.cta-group{margin-top:56px}
