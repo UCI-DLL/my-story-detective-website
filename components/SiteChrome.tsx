@@ -6,14 +6,6 @@ const navigation = [
   ["Contact", "/contact"],
 ] as const;
 
-const footerNavigation = [
-  ["About", "/about"],
-  ["Platform", "/platform"],
-  ["Research", "/research"],
-  ["People", "/people"],
-  ["Contact", "/contact"],
-] as const;
-
 export function Arrow() {
   return <span aria-hidden="true">↗</span>;
 }
@@ -27,7 +19,7 @@ export function SiteHeader() {
 }
 
 export function SiteFooter() {
-  return <footer><Brand /><p>An AI-supported literacy coach for struggling readers, developed at the UC Irvine Digital Learning Lab and Language Literacy Learning Lab.</p><div>{footerNavigation.map(([label, href]) => <a key={href} href={href}>{label}</a>)}</div><aside className="funding-ack"><b>Funding acknowledgment</b><p>The contents of this website were developed under a cooperative agreement with the U.S. Department of Education, Office of Special Education Programs (Award No. H327S260038). However, those contents do not necessarily represent the policy of the Department of Education, and you should not assume endorsement by the Federal Government.</p></aside><small>© 2026 My Story Detective · University of California, Irvine</small></footer>;
+  return <footer><Brand /><p>An AI-supported literacy coach for struggling readers, developed at the UC Irvine Digital Learning Lab and Language Literacy Learning Lab.</p><aside className="funding-ack"><b>Funding acknowledgment</b><p>The contents of this website were developed under a cooperative agreement with the U.S. Department of Education, Office of Special Education Programs (Award No. H327S260038). However, those contents do not necessarily represent the policy of the Department of Education, and you should not assume endorsement by the Federal Government.</p></aside><small>© 2026 My Story Detective · University of California, Irvine</small></footer>;
 }
 
 export function WebsiteIcon() {
