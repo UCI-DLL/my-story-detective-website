@@ -662,3 +662,20 @@ footer>small{margin-top:20px;padding-top:20px}
 
 .pg-shot{display:flex;align-items:center;justify-content:center}
 .pg-shot .showcase-placeholder{width:100%;height:auto;aspect-ratio:4/3;margin:0;background:white}
+
+/* 2026-11-20: sub-page hero with the storybook illustration on the right */
+.pg-hero{position:relative;overflow:hidden;padding:72px var(--gutter);background:radial-gradient(ellipse 34% 95% at 76% 50%,#a9c3d6 0%,#86a7c1 22%,#4f7699 46%,#1d4470 70%,rgba(11,47,85,0) 100%),#0b2f55}
+.pg-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--col-gap);align-items:center;min-height:300px}
+.pg-hero-text{position:relative;z-index:1}
+.pg-hero-text .section-kicker{margin:0 0 14px}
+.pg-hero-text h1{margin:0}
+.pg-hero-text .sec-lede{margin-top:20px!important;max-width:620px!important}
+.pg-hero-art{align-self:stretch;min-height:300px;margin:-72px 0;background:url('/banner-story.jpg') center 46%/auto 112% no-repeat;-webkit-mask-image:radial-gradient(ellipse 42% 60% at 50% 48%,#000 40%,rgba(0,0,0,.55) 68%,transparent 100%);mask-image:radial-gradient(ellipse 42% 60% at 50% 48%,#000 40%,rgba(0,0,0,.55) 68%,transparent 100%)}
+@media(max-width:900px){.pg-hero{background:#0b2f55}.pg-hero-grid{grid-template-columns:1fr}.pg-hero-art{display:none}}
+
+.pg-hero-art{justify-self:center;width:auto;aspect-ratio:520/754;background-size:cover;background-position:center;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 45%,rgba(0,0,0,.5) 72%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 45%,rgba(0,0,0,.5) 72%,transparent 100%)}
+
+.pg-hero-more{margin-top:14px!important}
+.pg-hero .pg-hero-btn{background:var(--gold);color:var(--navy)}
+.pg-hero .pg-hero-btn:hover{background:white}
+.pg-contact .pg-hero{padding-top:96px;padding-bottom:96px}

@@ -19,7 +19,7 @@ export function SiteHeader({ current }: { current?: string } = {}) {
 }
 
 export function PageHero({ kicker, title, lede, children }: { kicker: string; title: string; lede: string; children?: React.ReactNode }) {
-  return <section className="pg-hero"><div className="sec-head"><div><p className="section-kicker">{kicker}</p><h1>{title}</h1></div><div><p className="sec-lede">{lede}</p>{children}</div></div></section>;
+  return <section className="pg-hero"><div className="pg-hero-grid"><div className="pg-hero-text"><p className="section-kicker">{kicker}</p><h1>{title}</h1><p className="sec-lede">{lede}</p>{children}</div><div className="pg-hero-art" aria-hidden="true" /></div></section>;
 }
 
 export function CtaBand({ kicker, title, text, href, label }: { kicker: string; title: string; text: string; href: string; label: string }) {
