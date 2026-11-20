@@ -548,3 +548,117 @@ footer>small{margin-top:20px;padding-top:20px}
 .pf-row .pf-media.showcase-grid{margin-top:32px;column-gap:24px}
 .pf-media .showcase-card{border-color:#dbe7ef;box-shadow:0 2px 10px rgba(0,34,68,.05)}
 @media(max-width:700px){.pf-row,.pf-row+.pf-row{padding:28px 22px}.pf-toolbar{justify-content:flex-start;flex-wrap:wrap}}
+
+/* 2026-11-20: seven team members -> four columns on wide screens */
+@media(min-width:1200px){.team-card-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.team-card{padding:26px 24px 28px}}
+
+.portrait-initials{display:grid;place-items:center;width:100%;height:100%;background:var(--navy);color:white;font:700 30px/1 'Montserrat','Open Sans',sans-serif;letter-spacing:.02em}
+
+/* 2026-11-20: undergraduate research assistants on the People page */
+.people-directory-students{padding-top:0}
+
+/* ===== 2026-11-20: sub-pages share the homepage design system ===== */
+/* Header: same navy bar on every page */
+.site-header.site-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--col-gap);align-items:center;min-height:56px;padding-top:0;padding-bottom:0;background:var(--navy);border-bottom:4px solid var(--gold);position:sticky;top:0;z-index:20}
+.site-header.site-header .brand{display:flex;gap:12px;align-items:center}
+.site-header.site-header .brand-rule{display:none}
+.site-header.site-header .brand>span:last-child{position:static;width:auto;height:auto;overflow:visible;clip:auto}
+.site-header.site-header .brand b{color:white;font-size:14px;letter-spacing:.14em;white-space:nowrap}
+.site-header.site-header .brand small{display:none}
+.site-header.site-header nav{display:flex;justify-content:space-between;width:100%;margin:0;color:white;font-size:15px;font-weight:700}
+.site-header.site-header nav a{padding:6px 0;border-bottom:2px solid transparent}
+.site-header.site-header nav a:hover{color:var(--gold)}
+.site-header.site-header nav a[aria-current="page"]{color:var(--gold);border-bottom-color:var(--gold)}
+@media(max-width:900px){.site-header.site-header{grid-template-columns:1fr;padding-top:12px;padding-bottom:12px;row-gap:10px}.site-header.site-header nav{justify-content:flex-start;flex-wrap:wrap;gap:8px 20px}}
+
+/* Page shell */
+.pg{background:var(--paper)}
+.pg-section{padding:80px var(--gutter)}
+.pg-tight-top{padding-top:0}
+.pg-white{background:white}
+.pg-paper{background:var(--paper)}
+.pg-blue{background:var(--blue);color:white}
+.pg-navy{background:var(--navy);color:white}
+.pg-blue .section-kicker{color:var(--gold)}
+.pg-navy .section-kicker{color:#8cc4e5}
+.pg-blue .sec-head h2,.pg-navy .sec-head h2{color:white}
+.pg-blue .sec-lede,.pg-blue .pg-copy p,.pg-navy .sec-lede{color:#d3e4f2}
+
+/* Page hero: navy, same two-column header pattern */
+.pg-hero{padding:88px var(--gutter) 80px;background:radial-gradient(ellipse 60% 120% at 100% 0%,rgba(140,180,210,.28),transparent 60%),var(--navy);color:white}
+.pg-hero .sec-head{margin:0}
+.pg-hero .section-kicker{color:var(--gold)}
+.pg-hero h1{margin:0;font:700 clamp(34px,3.8vw,54px)/1.1 'Montserrat','Open Sans',sans-serif;color:white;text-wrap:balance}
+.pg-hero .sec-lede{color:#c9def0;font-size:19px!important}
+.pg-hero-note{margin-top:28px;padding:20px 24px;border-left:4px solid var(--gold);background:rgba(255,255,255,.07);border-radius:0 10px 10px 0}
+.pg-hero-note span,.pg-hero-links>span{display:block;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.15em}
+.pg-hero-note strong{display:block;margin:8px 0 6px;font:700 20px/1.3 'Montserrat','Open Sans',sans-serif;color:white}
+.pg-hero-note p{margin:0;color:#c9def0;font-size:15px;line-height:1.6}
+.pg-hero-links{display:grid;gap:10px;margin-top:28px}
+.pg-hero-links>span{margin-bottom:4px}
+.pg-hero-links a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 18px;border:1px solid rgba(255,255,255,.25);border-radius:10px;color:white;font-weight:700;font-size:15px}
+.pg-hero-links a:hover{border-color:var(--gold);color:var(--gold)}
+
+/* Body copy in the right column */
+.pg-copy p{margin:0 0 16px;color:var(--muted);font-size:18px;line-height:1.65;text-wrap:pretty}
+.pg-copy p:last-child{margin-bottom:0}
+.pg-copy-wide{max-width:none}
+.pg-copy .sec-actions{margin-top:26px}
+.pg-note{margin:22px 0 0!important;padding:18px 22px;background:var(--paper);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;color:var(--ink)!important;font-size:16px!important;line-height:1.6}
+.pg-white .pg-note{background:var(--paper)}
+
+/* Cards and grids */
+.pg-grid{display:grid;gap:24px;margin:0;padding:0;list-style:none}
+.pg-grid-2{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--col-gap)}
+.pg-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.pg-grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.pg-card{padding:30px 32px;background:white;border:1px solid #d6e4ee;border-top:5px solid var(--gold);border-radius:12px;color:var(--ink)}
+.pg-card-paper{background:var(--paper);border-color:#dbe7ef;border-top-color:var(--gold)}
+.pg-navy .pg-card{border:none;border-top:5px solid var(--gold);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.pg-card-kicker{display:block;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.15em}
+.pg-card h3{margin:12px 0 10px;font:700 21px/1.25 'Montserrat','Open Sans',sans-serif;color:var(--navy);text-wrap:balance}
+.pg-card p{margin:0;color:var(--muted);font-size:16px;line-height:1.65;text-wrap:pretty}
+.pg-step-number{display:block;font:700 28px/1 'Montserrat','Open Sans',sans-serif;color:var(--gold)}
+.pg-steps .pg-card{border-top:5px solid var(--blue)}
+.pg-steps .pg-card h3{margin-top:16px}
+
+/* Outline (secondary) button, same as "View the grant proposal" */
+.pg-outline-btn{display:inline-flex;align-items:center;gap:12px;padding:14px 20px;border:2px solid var(--blue);border-radius:8px;background:white;color:var(--blue);font-size:15px;font-weight:700}
+.pg-outline-btn:hover{background:var(--blue);color:white}
+
+/* Screenshot panels (reuse homepage .pf-row panel) */
+.pg .pf-row{display:block}
+.pg .pf-row .pg-copy{margin-top:14px;max-width:820px}
+.pg .pf-row .pg-copy p{font-size:17px}
+.pg-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:30px;align-items:center}
+.pg-shots img{width:100%;height:auto;padding:16px;background:white;border:1px solid #dbe7ef;border-radius:12px;box-shadow:0 2px 10px rgba(0,34,68,.05)}
+
+/* Publications */
+.pg-refs{margin-top:40px;padding-top:28px;border-top:1px solid #c9dbe8}
+.pg-refs-label{margin:0 0 16px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.14em}
+.pg-refs ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.pg-refs li{padding-left:18px;border-left:3px solid var(--gold);color:var(--muted);font-size:15px;line-height:1.65}
+.pg-refs a{color:var(--navy);font-weight:600;text-decoration:underline;text-decoration-color:rgba(37,87,153,.35);text-underline-offset:3px}
+.pg-refs a:hover{color:var(--blue);text-decoration-color:var(--gold)}
+
+/* People page cards */
+.pg .team-card-grid{margin:0}
+.team-card-role{margin:0 0 6px;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.pg .team-card .person-links{display:flex;gap:10px;margin-top:18px}
+@media(min-width:1200px){.team-card-grid.pg-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+@media(max-width:1000px){.pg-grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}.pg-grid-3{grid-template-columns:1fr}}
+@media(max-width:900px){.pg-grid-2,.pg-shots{grid-template-columns:1fr}}
+@media(max-width:640px){.pg-grid-4{grid-template-columns:1fr}.pg-section{padding-top:56px;padding-bottom:56px}}
+
+/* 2026-11-20: calmer sub-pages - neutral cards, one accent colour */
+.pg-card,.pg-card-paper,.pg-steps .pg-card,.pg-navy .pg-card{border:1px solid #dbe5ee;border-top:1px solid #dbe5ee;box-shadow:none}
+.pg-white .pg-card-paper{background:var(--paper);border-color:#e3ebf2}
+.pg-step-number{color:var(--blue);font-size:22px}
+.pg-refs li{border-left-color:#c9dbe8}
+.pg-section .sec-head h2{font-size:clamp(28px,2.8vw,40px)}
+
+.pg-hero h1{font-size:clamp(32px,3.2vw,46px);text-wrap:pretty}
+
+.pg-shot{display:flex;align-items:center;justify-content:center}
+.pg-shot .showcase-placeholder{width:100%;height:auto;aspect-ratio:4/3;margin:0;background:white}

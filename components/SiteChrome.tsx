@@ -14,8 +14,16 @@ export function Brand() {
   return <a className="brand" href="/" aria-label="My Story Detective home"><span className="brand-rule" /><span><b>MY STORY DETECTIVE</b><small>UC Irvine · Digital Learning Lab · Language Literacy Learning Lab</small></span></a>;
 }
 
-export function SiteHeader() {
-  return <header className="site-header"><Brand /><nav aria-label="Main navigation">{navigation.map(([label, href]) => <a key={href} href={href}>{label}</a>)}</nav></header>;
+export function SiteHeader({ current }: { current?: string } = {}) {
+  return <header className="site-header"><Brand /><nav aria-label="Main navigation">{navigation.map(([label, href]) => <a key={href} href={href} aria-current={current === href ? "page" : undefined}>{label}</a>)}</nav></header>;
+}
+
+export function PageHero({ kicker, title, lede, children }: { kicker: string; title: string; lede: string; children?: React.ReactNode }) {
+  return <section className="pg-hero"><div className="sec-head"><div><p className="section-kicker">{kicker}</p><h1>{title}</h1></div><div><p className="sec-lede">{lede}</p>{children}</div></div></section>;
+}
+
+export function CtaBand({ kicker, title, text, href, label }: { kicker: string; title: string; text: string; href: string; label: string }) {
+  return <section className="contact contact-teaser"><div><p className="section-kicker">{kicker}</p><h2>{title}</h2></div><div><p>{text}</p><a className="contact-button" href={href}>{label} <Arrow /></a></div></section>;
 }
 
 export function SiteFooter() {
